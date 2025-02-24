@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Laberinto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Juego del Laberinto 🏆</h1>
+        <div class="game-area">
+            <canvas id="laberintoCanvas"></canvas>
+            <button id="reiniciarBtn" style="display: none;">🔄 Reiniciar Juego</button>
+        </div>
+        <div class="info">
+            <p>⏳ Temporizador: <span id="timer">0.00</span></p>
+        </div>
+    </div>
+    <div id="mobileControls">
+        <div class="control-row">
+            <button class="control-btn" id="up">↑</button>
+        </div>
+        <div class="control-row">
+            <button class="control-btn" id="left">←</button>
+            <button class="control-btn" id="down">↓</button>
+            <button class="control-btn" id="right">→</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
